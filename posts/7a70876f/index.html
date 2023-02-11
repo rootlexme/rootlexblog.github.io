@@ -240,56 +240,59 @@
 
                     <div class="index_content">
                         <div class="index_content_list_item">
-    
-        <div class="content_item">
-            <div class="content_author">
+    <div class="content_author">
     <img src="/img/avatar.webp" alt="头像">
     <div class="content_author_item">
       <span class="name">Rootlex</span>
-      <div class="date" >2020-05-03</div>
+      <div class="date" >2023-01-24</div>
     </div>
 </div>
 
-            <a class="main_content" href="posts/80cfaa0f/" xmlns="http://www.w3.org/1999/html">
-    <div class="main_content_up">
-        <div class="left">
-            <div class="title">互联网</div>
-            <div class="description">前言
-随着互联网发展的日新月异，我们越来越离不开互联网。我们作为互联网的一个使用者，您是否了解过其工作原理呢？
-
-索引列表
- 1. 互联网（Internet）
- 2. 协议
- 3. IP协议
- 4. </div>
-        </div>
-        <div class="right">
-            <i class="ri-arrow-right-s-line"></i>
-        </div>
+    <div class="post_info">
+        新的界面，新的开始
     </div>
-    <div class="content_statistics">
-        <div class="left">
-            <div class="item">
-                <i class="ri-map-pin-line"></i>
-                <span>广东</span>
-            </div>
-            <div class="item post_date_time">
-                <i class="ri-time-line"></i>
-                <span>3 年前</span>
-            </div>
-        </div>
-        <div class="right">
-            <div class="item">
-                <i class="ri-bookmark-line"></i>
-                <span>笔记</span>
-            </div>
-        </div>
+    <div class="content_g">
+        <html><head></head><body><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一直想写一个新的博客，但是一直没有啥好点子，最近看到<a target="_blank" rel="noopener" href="https://pixit.cn/">Pix</a>主题，觉得有很多地方可以借鉴一下，于是便诞生这个新的博客。</p>
+<h2 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h2><p>最近刚学完Typescript和Nuxt3就决定要用到它们来写。</p>
+<ol>
+<li>一开始想的是前后端分离，于是就想到之前买的<a target="_blank" rel="noopener" href="https://inis.cc/">inis</a>，但是我太菜不会用Docker部署PHP+ThinkPHP环境，我又不想用宝塔，于是就忽略掉这个选项</li>
+<li>然后就是Strapi，Strapi是一个非常不错的框架，但是我在部署时遇到些问题，于是也放弃这个选项</li>
+<li>之后有用一些CMS系统，都不太让我满意</li>
+</ol>
+<p>偶然一次我在Nuxt modules中看到 <a target="_blank" rel="noopener" href="https://content.nuxtjs.org/">Nuxt Content</a> 这个系统觉得挺不错的，而且还不用服务器，于是就用它了</p>
+<p><strong>最终所用到的技术和库</strong></p>
+<p>技术: Vue.js + Nuxt + Nuxt Content + Vite + Typescript</p>
+<p>库: Feed + Nuxt/sitemap</p>
+<p>评论系统: <a target="_blank" rel="noopener" href="https://artalk.js.org/">Artalk</a></p>
+<h2 id="开发过程中踩的“坑”"><a href="#开发过程中踩的“坑”" class="headerlink" title="开发过程中踩的“坑”"></a>开发过程中踩的“坑”</h2><h3 id="Nuxt-SSR-不支持一些客户端的方法"><a href="#Nuxt-SSR-不支持一些客户端的方法" class="headerlink" title="Nuxt SSR 不支持一些客户端的方法"></a>Nuxt SSR 不支持一些客户端的方法</h3><p>Nuxt SSR 不支持一些客户端的方法，如: Window, document，所以导航栏的fixed效果就不能在服务端渲染，解决方案有两种</p>
+<ol>
+<li>在 <code>nuxt.config.ts</code> 添加外部JS将导航栏fixed逻辑代码写进JS中</li>
+<li>使用Nuxt官方的API方法 <code>&lt;client-only&gt;</code> 让代码在客户端中运行</li>
+</ol>
+<h3 id="Artalk评论接入存在问题"><a href="#Artalk评论接入存在问题" class="headerlink" title="Artalk评论接入存在问题"></a>Artalk评论接入存在问题</h3><p><img src="https://bu.dusays.com/2023/01/23/63ce68079d404.webp" alt="Artalk接入问题"></p>
+<p>我暂时不知道是什么导致的，所以使用了个替代方案如下</p>
+<p><strong>我的解决方法:</strong> 增加点击加载评论方法，让页面完全加载完成后在进行评论初始化</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p><a href="https://blog.nalex.top/atom.xml">atom订阅</a><br><a href="https://blog.nalex.top/sitemap.xml">sitemap</a></p>
+<p>目前博客部署在Vercel, CDN用的是<a target="_blank" rel="noopener" href="https://my.farcdn.net/">Farcdn</a></p>
+</body></html>
     </div>
-</a>
+    <div class="comments_top">
+    <i class="ri-chat-3-line"></i>
+    <div class="comment_title">评论</div>
+</div>
+<div id="Comments"></div>
+<script>
+    function loadComment(){
+        new Artalk({
+            el:        '#Comments',
+            pageKey:   'https://blog.nalex.top/posts/7a70876f/',
+            pageTitle: '新的界面，新的开始',
+            server:    'https://artalk.yj.al/',
+            site:      'Rootlex 的博客',
+        })
+    }
+</script>
 
-        </div>
-        <hr>
-    
 </div>
 
                     </div>

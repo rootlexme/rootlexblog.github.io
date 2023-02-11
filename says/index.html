@@ -102,7 +102,7 @@
           文章
         </span>
         <span class="statistics_num">
-          7 篇
+          8 篇
         </span>
     </div>
     <div class="statistics_item">
@@ -110,7 +110,7 @@
           分类
         </span>
         <span class="statistics_num">
-          2
+          3
         </span>
     </div>
     <div class="statistics_item">
@@ -118,7 +118,7 @@
           字数
         </span>
         <span class="statistics_num">
-          7.5k
+          7.9k
         </span>
     </div>
     <div class="statistics_item">
@@ -226,6 +226,8 @@
                 
                     <a class="cate_item" href="/categories/笔记/">笔记</a>
                 
+                    <a class="cate_item" href="/categories/折腾/">折腾</a>
+                
             </div>
         </div>
         <div class="bar_dec">
@@ -273,17 +275,21 @@
         </main>
         <script type="text/javascript" src="/js/main.js"></script>
 
-    <script type="text/javascript" src="https://cdn1.tianli0.top/npm/pjax/pjax.min.js"></script>
+    <script type="text/javascript" src="/js/lib/pjax.min.js"></script>
     <script>
         const pjax = new Pjax({
             elements: 'a:not([target="_blank"])',
             selectors: [
                 '.index_content',
+                '.atk-layer-wrap'
             ],
             cacheBust: false,
             scrollRestoration: false,
         })
-        document.addEventListener("pjax:success", whenDOMReady)
+        document.addEventListener("pjax:success", () => {
+            whenDOMReady();
+            loadComment()
+        })
     </script>
 
 
