@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>
+    Rootlex Blog
+    
+</title>
+<noscript>开启Javascript是必要的</noscript>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta aria-description="">
+<meta aria-keyshortcuts="">
+<link href="/css/var.css" rel="stylesheet">
+<link href="/fonts/remixicon.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/content.css" rel="stylesheet">
+
+    <link href="/css/hightlight/theme.css" rel="stylesheet">
+
+
+
+    <script>
+        const GobalCofig = {
+            codelimit: '300'
+        }
+    </script>
+    <style>
+        :root{
+            --code-limit: 300px
+        }
+    </style>
+
+<link href="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.js"></script>
+
+    <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rootlex Blog" type="application/atom+xml">
+</head>
+    <body>
+        <main class="layouts_warp">
+            <div class="layouts_content">
+                <div class="sidebar_main w-1-3" id="sidebar">
+    <div class="site_name">
+        <img src="/img/site.png" alt="网页标题">
+    </div>
+    <ul class="menu" id="menu">
+        
+            
+            <li class="menu_list">
+                <a href="/" class="menu_item">
+                    <i class="ri-home-6-line"></i>
+                    <span class="menu_item_span">
+                        主页
+                    </span>
+                </a>
+            </li>
+        
+            
+            <li class="menu_list">
+                <a href="/says/" class="menu_item">
+                    <i class="ri-message-3-line"></i>
+                    <span class="menu_item_span">
+                        闲言碎语
+                    </span>
+                </a>
+            </li>
+        
+            
+            <li class="menu_list">
+                <a href="/bgm/" class="menu_item">
+                    <i class="ri-movie-2-line"></i>
+                    <span class="menu_item_span">
+                        追番
+                    </span>
+                </a>
+            </li>
+        
+            
+            <li class="menu_list">
+                <a href="/friends/" class="menu_item">
+                    <i class="ri-links-line"></i>
+                    <span class="menu_item_span">
+                        朋友们
+                    </span>
+                </a>
+            </li>
+        
+            
+            <li class="menu_list">
+                <a href="/fc/" class="menu_item">
+                    <i class="ri-heart-line"></i>
+                    <span class="menu_item_span">
+                        朋友圈
+                    </span>
+                </a>
+            </li>
+        
+    </ul>
+    <hr>
+    <div class="statistics_warp">
+    <div class="statistics_item">
+        <span class="statistics_span">
+          文章
+        </span>
+        <span class="statistics_num">
+          7 篇
+        </span>
+    </div>
+    <div class="statistics_item">
+        <span class="statistics_span">
+          分类
+        </span>
+        <span class="statistics_num">
+          2
+        </span>
+    </div>
+    <div class="statistics_item">
+        <span class="statistics_span">
+          字数
+        </span>
+        <span class="statistics_num">
+          7.5k
+        </span>
+    </div>
+    <div class="statistics_item">
+        <span class="statistics_span">
+          运行
+        </span>
+        <span class="statistics_num">
+         353 天
+        </span>
+    </div>
+</div>
+
+    <div class="connect">
+        
+            
+            <a target="_blank" rel="noopener" href="https://space.bilibili.com/494271806" style="color: #00b1ff" aria-label="bilibili">
+                <i class="ri-bilibili-fill"></i>
+            </a>
+        
+            
+            <a target="_blank" rel="noopener" href="https://github.com/rootlexblog" style="color: black" aria-label="github">
+                <i class="ri-github-fill"></i>
+            </a>
+        
+            
+            <a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=3416536539" style="color: #ff3030" aria-label="网易云">
+                <i class="ri-netease-cloud-music-fill"></i>
+            </a>
+        
+            
+            <a href="mailto:a@nalex.top" style="color: #ffc952" aria-label="邮箱">
+                <i class="ri-mail-send-line"></i>
+            </a>
+        
+    </div>
+    <div class="copyright">
+        <i class="ri-copyright-line"></i>
+        <span>2023</span>
+        <a href="/">Rootlex</a>
+    </div>
+</div>
+
+                <div class="layouts_page_content w-2-3">
+                    <div class="nav hide" id="nav">
+    <div class="nav_item">
+      <a href="/" aria-label="主页" class="home">
+        <i class="ri-home-6-line"></i>
+      </a>
+      <a class="rand_page" aria-label="随机页面">
+        <i class="ri-shuffle-line"></i>
+      </a>
+      <div class="mobile_nav_item">
+        
+          
+          <a class="menu_item" href="/" aria-label="主页">
+            <i class="ri-home-6-line"></i>
+          </a>
+        
+          
+          <a class="menu_item" href="/says/" aria-label="闲言碎语">
+            <i class="ri-message-3-line"></i>
+          </a>
+        
+          
+          <a class="menu_item" href="/bgm/" aria-label="追番">
+            <i class="ri-movie-2-line"></i>
+          </a>
+        
+          
+          <a class="menu_item" href="/friends/" aria-label="朋友们">
+            <i class="ri-links-line"></i>
+          </a>
+        
+          
+          <a class="menu_item" href="/fc/" aria-label="朋友圈">
+            <i class="ri-heart-line"></i>
+          </a>
+        
+      </div>
+    </div>
+    <div class="nav_item">
+      <a href="/atom.xml" aria-label="rss" target="_blank">
+        <i class="ri-rss-fill"></i>
+      </a>
+      <a target="_blank" rel="noopener" href="https://www.travellings.cn/go.html" aria-label="开往">
+        <i class="ri-subway-fill"></i>
+      </a>
+    </div>
+</div>
+
+                    <div class="content_top">
+    <div class="top_img">
+        <img src="/img/topimg.webp" alt="顶部头图" class="top_img_a">
+        <div class="me">
+            <span>Rootlex</span>
+            <img src="/img/avatar.webp" alt="头像" class="avatar">
+        </div>
+    </div>
+    <div class="top_bar">
+        <div class="cate_list" id="cate">
+            <a class="cate_item" href="/">主页</a>
+            <div class="cate_list_item">
+                
+                    <a class="cate_item" href="/categories/教程/">教程</a>
+                
+                    <a class="cate_item" href="/categories/笔记/">笔记</a>
+                
+            </div>
+        </div>
+        <div class="bar_dec">
+            <span>寒蝉黎明之时，便是重生之日</span>
+        </div>
+    </div>
+    <hr>
+</div>
+
+
+                    <div class="index_content">
+                        <div class="index_content_list_item">
+    <div class="content_author">
+    <img src="/img/avatar.webp" alt="头像">
+    <div class="content_author_item">
+      <span class="name">Rootlex</span>
+      <div class="date" >2022-11-10</div>
+    </div>
+</div>
+
+    <div class="post_info">
+        仿Heo音乐播放器
+    </div>
+    <div class="content_g">
+        <html><head></head><body><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在看到 <a target="_blank" rel="noopener" href="https://blog.zhheo.com/">Heo</a> 的小药丸音乐播放器的设计，还挺好看的，于是便决定开抄</p>
+<p><img src="https://bu.dusays.com/2022/11/13/637071436f2a6.png" alt="heo demo"></p>
+<h2 id="引入音乐播放器"><a href="#引入音乐播放器" class="headerlink" title="引入音乐播放器"></a>引入音乐播放器</h2><p>首先找到 <code>_config.butterfly.yml</code> 将 <a target="_blank" rel="noopener" href="https://aplayer.js.org/">aplayer</a> 引入打开</p>
+<pre class="language-yaml pre_code" data-language="yaml"><code class="language-yaml"><span class="token key atrule">aplayerInject</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">per_page</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></code><div class="code-expand-btn"><i class="ri-arrow-drop-down-line"></i></div></pre>
+<h2 id="启用音乐播放器"><a href="#启用音乐播放器" class="headerlink" title="启用音乐播放器"></a>启用音乐播放器</h2><p>在 <code>_config.butterfly.yml</code> 中的 <code>inject</code> 加入一段代码</p>
+<pre class="language-diff pre_code" data-language="diff"><code class="language-diff">inject:
+<span class="token unchanged"><span class="token prefix unchanged"> </span><span class="token line"> head:
+</span><span class="token prefix unchanged"> </span><span class="token line">   - &lt;link rel="stylesheet" href="/css/custom.css" type="text/css"&gt;
+</span><span class="token prefix unchanged"> </span><span class="token line"> bottom:
+</span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">    - &lt;div id="nav-music" onclick="rootlex.musicToggle()"&gt;&lt;div id="nav-music-hoverTips"&gt;音乐已暂停&lt;/div&gt;&lt;meting-js id="1708664797" server="tencent" type="playlist" mutex="true" preload="none" data-lrctype="0" order="random"&gt;&lt;/meting-js&gt;&lt;/div&gt;
+</span></span><span class="token unchanged"><span class="token prefix unchanged"> </span><span class="token line">   - &lt;script data-pjax src="/js/waterfall.js"&gt;&lt;/script&gt;
+</span><span class="token prefix unchanged"> </span><span class="token line">   - &lt;script data-pjax src="/js/custom.js"&gt;&lt;/script&gt;</span></span></code><div class="code-expand-btn"><i class="ri-arrow-drop-down-line"></i></div></pre>
+
+<p><strong>参数解析</strong></p>
+<p><code>&lt;meting-js id="1708664797" server="tencent" type="playlist" mutex="true" preload="none" data-lrctype="0" order="random"&gt;&lt;/meting-js&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id</td>
+<td>歌单id</td>
+</tr>
+<tr>
+<td>server</td>
+<td>音乐播放源 netease（网易）, tencent（QQ音乐）, kugou（酷狗）, xiami（虾米）, baidu（百度）</td>
+</tr>
+<tr>
+<td>mutex</td>
+<td>防止多个播放器同时播放 开：true 关：false</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>播放器主色</td>
+</tr>
+<tr>
+<td>order</td>
+<td>ramdon（随机播放） 或 list（顺序播放）</td>
+</tr>
+</tbody></table>
+<h2 id="添加自定义CSS"><a href="#添加自定义CSS" class="headerlink" title="添加自定义CSS"></a>添加自定义CSS</h2><p>通过 <code>custom.css</code> 引入样式</p>
+<p><strong>颜色样式</strong></p>
+<pre class="language-css pre_code" data-language="css"><code class="language-css"><span class="token comment">/* 颜色 */</span>
+<span class="token selector">:root</span> <span class="token punctuation">{</span>
+  <span class="token property">--rootlex-theme-op</span><span class="token punctuation">:</span> #4259ef23<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-white</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-black</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-none</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-gray</span><span class="token punctuation">:</span> #999999<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-yellow</span><span class="token punctuation">:</span> #ffc93e<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-border-radius</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-main</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-theme<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-main-op</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-theme-op<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-theme</span><span class="token punctuation">:</span> 0 8px 12px -3px <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-theme-op<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-main</span><span class="token punctuation">:</span> 0 8px 12px -3px <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-main-op<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-blue</span><span class="token punctuation">:</span> 0 8px 12px -3px <span class="token function">rgba</span><span class="token punctuation">(</span>40<span class="token punctuation">,</span> 109<span class="token punctuation">,</span> 234<span class="token punctuation">,</span> 0.2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-white</span><span class="token punctuation">:</span> 0 8px 12px -3px <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-black</span><span class="token punctuation">:</span> 0 0 12px 4px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.05<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-yellow</span><span class="token punctuation">:</span> 0px 38px 77px -26px <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 201<span class="token punctuation">,</span> 62<span class="token punctuation">,</span> 0.12<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-red</span><span class="token punctuation">:</span> 0 8px 12px -3px #ee7d7936<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-green</span><span class="token punctuation">:</span> 0 8px 12px -3px #87ee7936<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-border</span><span class="token punctuation">:</span> 0 8px 16px -4px #2c2d300c<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-logo-color</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>215deg<span class="token punctuation">,</span> #4584ff 30%<span class="token punctuation">,</span> #ff7676 70%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--style-border</span><span class="token punctuation">:</span> 1px solid <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-card-border<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-blue-main</span><span class="token punctuation">:</span> #425aef<span class="token punctuation">;</span>
+  <span class="token property">--style-border-hover</span><span class="token punctuation">:</span> 1px solid <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--style-border-dashed</span><span class="token punctuation">:</span> 1px dashed <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-theme-op<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--style-border-avatar</span><span class="token punctuation">:</span> 4px solid <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-background<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--style-border-always</span><span class="token punctuation">:</span> 1px solid <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-card-border<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-white-acrylic1</span><span class="token punctuation">:</span> #fefeff <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-white-acrylic2</span><span class="token punctuation">:</span> #fcfdff <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-black-acrylic2</span><span class="token punctuation">:</span> #08080a <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-black-acrylic1</span><span class="token punctuation">:</span> #0b0b0e <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">[data-theme='light']</span> <span class="token punctuation">{</span>
+  <span class="token property">--rootlex-theme</span><span class="token punctuation">:</span> #425aef<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-theme-op</span><span class="token punctuation">:</span> #4259ef23<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-blue</span><span class="token punctuation">:</span> #425aef<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-red</span><span class="token punctuation">:</span> #d8213c<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-pink</span><span class="token punctuation">:</span> #ff7c7c<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-green</span><span class="token punctuation">:</span> #57bd6a<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-fontcolor</span><span class="token punctuation">:</span> #363636<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-background</span><span class="token punctuation">:</span> #f7f9fe<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-reverse</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-maskbg</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-maskbgdeep</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.85<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-hovertext</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-theme<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-ahoverbg</span><span class="token punctuation">:</span> #f7f7fa<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-lighttext</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-secondtext</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>60<span class="token punctuation">,</span> 60<span class="token punctuation">,</span> 67<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-scrollbar</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>60<span class="token punctuation">,</span> 60<span class="token punctuation">,</span> 67<span class="token punctuation">,</span> 0.4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-card-btn-bg</span><span class="token punctuation">:</span> #edf0f7<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-post-blockquote-bg</span><span class="token punctuation">:</span> #fafcff<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-post-tabs-bg</span><span class="token punctuation">:</span> #f2f5f8<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-secondbg</span><span class="token punctuation">:</span> #edf0f7<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-nav</span><span class="token punctuation">:</span> 0 5px 12px -5px <span class="token function">rgba</span><span class="token punctuation">(</span>102<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 0.05<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-card-bg</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-lightblack</span><span class="token punctuation">:</span> 0 5px 12px -5px <span class="token function">rgba</span><span class="token punctuation">(</span>102<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-light2black</span><span class="token punctuation">:</span> 0 5px 12px -5px <span class="token function">rgba</span><span class="token punctuation">(</span>102<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-card-border</span><span class="token punctuation">:</span> #c0c6d8<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">[data-theme='dark']</span> <span class="token punctuation">{</span>
+  <span class="token property">--rootlex-theme</span><span class="token punctuation">:</span> #0084ff<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-theme-op</span><span class="token punctuation">:</span> #0084ff23<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-blue</span><span class="token punctuation">:</span> #0084ff<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-red</span><span class="token punctuation">:</span> #ff3842<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-pink</span><span class="token punctuation">:</span> #ff7c7c<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-green</span><span class="token punctuation">:</span> #57bd6a<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-fontcolor</span><span class="token punctuation">:</span> #f7f7fa<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-background</span><span class="token punctuation">:</span> #18171d<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-reverse</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-maskbg</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-maskbgdeep</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.85<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-hovertext</span><span class="token punctuation">:</span> #0a84ff<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-ahoverbg</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-lighttext</span><span class="token punctuation">:</span> #f2b94b<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-secondtext</span><span class="token punctuation">:</span> #a1a2b8<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-scrollbar</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>200<span class="token punctuation">,</span> 200<span class="token punctuation">,</span> 223<span class="token punctuation">,</span> 0.4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-card-btn-bg</span><span class="token punctuation">:</span> #30343f<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-post-blockquote-bg</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-post-tabs-bg</span><span class="token punctuation">:</span> #121212<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-secondbg</span><span class="token punctuation">:</span> #30343f<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-nav</span><span class="token punctuation">:</span> 0 5px 20px 0px <span class="token function">rgba</span><span class="token punctuation">(</span>28<span class="token punctuation">,</span> 28<span class="token punctuation">,</span> 28<span class="token punctuation">,</span> 0.4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-card-bg</span><span class="token punctuation">:</span> #1d1b26<span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-lightblack</span><span class="token punctuation">:</span> 0 5px 12px -5px <span class="token function">rgba</span><span class="token punctuation">(</span>102<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-shadow-light2black</span><span class="token punctuation">:</span> 0 5px 12px -5px <span class="token function">rgba</span><span class="token punctuation">(</span>102<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 68<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--rootlex-card-border</span><span class="token punctuation">:</span> #42444a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><div class="code-expand-btn"><i class="ri-arrow-drop-down-line"></i></div></pre>
+
+<p><strong>播放器样式</strong></p>
+<pre class="language-css pre_code" data-language="css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 1300px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">#nav-music</span> <span class="token punctuation">{</span>
+        <span class="token property">display</span><span class="token punctuation">:</span> none <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> 1001<span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+    <span class="token property">bottom</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+    <span class="token property">transform-origin</span><span class="token punctuation">:</span> left bottom<span class="token punctuation">;</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-shadow-border<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music:active</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.97<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music.playing</span> <span class="token punctuation">{</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 12px -3px <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-none<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">-webkit-animation</span><span class="token punctuation">:</span> playingShadow 5s linear infinite<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> playingShadow</span> <span class="token punctuation">{</span>
+    <span class="token selector">0%</span> <span class="token punctuation">{</span>
+        <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 12px -3px <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-none<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">50%</span> <span class="token punctuation">{</span>
+        <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 12px 0 <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">100%</span> <span class="token punctuation">{</span>
+        <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 12px -3px <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-none<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer.aplayer-withlrc .aplayer-pic</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+    <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>0deg<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--style-border-always<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">-webkit-animation</span><span class="token punctuation">:</span> changeright 24s linear infinite<span class="token punctuation">;</span>
+    <span class="token property">animation-play-state</span><span class="token punctuation">:</span> paused<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music.playing .aplayer.aplayer-withlrc .aplayer-pic</span> <span class="token punctuation">{</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 14px #ffffffa6<span class="token punctuation">;</span>
+    <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>0deg<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-white<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">animation-play-state</span><span class="token punctuation">:</span> running<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> changeright</span> <span class="token punctuation">{</span>
+
+    <span class="token selector">0%</span> <span class="token punctuation">{</span>
+        <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>0deg<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 2px #ffffff00<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">25%</span> <span class="token punctuation">{</span>
+        <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>90deg<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 14px #ffffff<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">50%</span> <span class="token punctuation">{</span>
+        <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>180deg<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 2px #ffffff00<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">75%</span> <span class="token punctuation">{</span>
+        <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>270deg<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 14px #ffffff<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">100%</span> <span class="token punctuation">{</span>
+        <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 2px #ffffff00<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer.aplayer-withlrc .aplayer-info</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-fontcolor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music.playing .aplayer.aplayer-withlrc .aplayer-info</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-white<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music #nav-music-hoverTips</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-white<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span>
+    <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music:hover:not(.playing) #nav-music-hoverTips</span> <span class="token punctuation">{</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music.playing #nav-music-hoverTips</span> <span class="token punctuation">{</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer</span> <span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--card-bg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 41px<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--style-border<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> auto <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music.playing .aplayer</span> <span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #0084ffdd<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--style-border-hover<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">backdrop-filter</span><span class="token punctuation">:</span> <span class="token function">saturate</span><span class="token punctuation">(</span>180%<span class="token punctuation">)</span> <span class="token function">blur</span><span class="token punctuation">(</span>20px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">-webkit-backdrop-filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span>20px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-notice</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-miniswitcher</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-body</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0 12px 0 8px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-pic .aplayer-play</span> <span class="token punctuation">{</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer-list</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-music</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-time</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-music .aplayer-author</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer.aplayer-withlist .aplayer-info</span> <span class="token punctuation">{</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-pic div</span> <span class="token punctuation">{</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-music .aplayer-title</span> <span class="token punctuation">{</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+    <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span>
+    <span class="token property">max-width</span><span class="token punctuation">:</span> 120px<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+    <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-controller</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.1<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-white<span class="token punctuation">)</span> <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token property">-webkit-animation</span><span class="token punctuation">:</span> lightBar 5s ease infinite<span class="token punctuation">;</span>
+    <span class="token property">animation-play-state</span><span class="token punctuation">:</span> paused<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music.playing .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played</span> <span class="token punctuation">{</span>
+    <span class="token property">animation-play-state</span><span class="token punctuation">:</span> running<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> lightBar</span> <span class="token punctuation">{</span>
+
+    <span class="token selector">0%</span> <span class="token punctuation">{</span>
+        <span class="token property">opacity</span><span class="token punctuation">:</span> 0.1<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">60%</span> <span class="token punctuation">{</span>
+        <span class="token property">opacity</span><span class="token punctuation">:</span> 0.3<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">100%</span> <span class="token punctuation">{</span>
+        <span class="token property">opacity</span><span class="token punctuation">:</span> 0.1<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">/* 歌词 */</span>
+<span class="token selector">#nav-music .aplayer.aplayer-withlrc .aplayer-lrc</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> -2px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music.playing .aplayer.aplayer-withlrc .aplayer-lrc</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-lrc p.aplayer-lrc-current</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--rootlex-white<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-lrc:after,
+#nav-music .aplayer .aplayer-lrc:before</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#nav-music .aplayer .aplayer-lrc p</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #ffffffb3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><div class="code-expand-btn"><i class="ri-arrow-drop-down-line"></i></div></pre>
+
+<h2 id="引入js"><a href="#引入js" class="headerlink" title="引入js"></a>引入js</h2><pre class="language-javascript pre_code" data-language="javascript"><code class="language-javascript"><span class="token comment">//音乐播放</span>
+<span class="token keyword">var</span> rootlex <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">musicToggle</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>rootlex_musicPlaying<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#nav-music"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">"playing"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            rootlex_musicPlaying <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'meting-js'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>aplayer<span class="token punctuation">.</span><span class="token function">pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#nav-music"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"playing"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            rootlex_musicPlaying <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'meting-js'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>aplayer<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code><div class="code-expand-btn"><i class="ri-arrow-drop-down-line"></i></div></pre>
+</body></html>
+    </div>
+    <div class="comments_top">
+    <i class="ri-chat-3-line"></i>
+    <div class="comment_title">评论</div>
+</div>
+<div id="Comments"></div>
+<script>
+    new Artalk({
+        el:        '#Comments',
+        pageKey:   'http://example.com/posts/heomusic/',
+        pageTitle: '仿Heo音乐播放器',
+        server:    'https://artalk.yj.al/',
+        site:      'Rootlex 的博客',
+    })
+</script>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript" src="/js/main.js"></script>
+
+    <script type="text/javascript" src="https://cdn1.tianli0.top/npm/pjax/pjax.min.js"></script>
+    <script>
+        const pjax = new Pjax({
+            elements: 'a:not([target="_blank"])',
+            selectors: [
+                '.index_content',
+            ],
+            cacheBust: false,
+            scrollRestoration: false,
+        })
+        document.addEventListener("pjax:success", whenDOMReady)
+    </script>
+
+
+    </body>
+</html>
