@@ -30,8 +30,6 @@
         }
     </style>
 
-<link href="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.css" rel="stylesheet">
-<script type="text/javascript" src="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.js"></script>
 
     <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rootlex Blog" type="application/atom+xml">
 </head>
@@ -126,7 +124,7 @@
           运行
         </span>
         <span class="statistics_num">
-         353 天
+         354 天
         </span>
     </div>
 </div>
@@ -320,13 +318,15 @@
 <p>非常感谢！！！！💕</p>
 </body></html>
     </div>
-    <div class="comments_top">
+    <link href="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.js"></script>
+<div class="comments_top">
     <i class="ri-chat-3-line"></i>
     <div class="comment_title">评论</div>
 </div>
 <div id="Comments"></div>
 <script>
-    function loadComment(){
+    window.onload = () => {
         new Artalk({
             el:        '#Comments',
             pageKey:   'https://blog.nalex.top/posts/8f292cc0/',
@@ -351,14 +351,14 @@
             elements: 'a:not([target="_blank"])',
             selectors: [
                 '.index_content',
-                '.atk-layer-wrap'
+                '.atk-layer-wrap',
+                '#Comments'
             ],
             cacheBust: false,
             scrollRestoration: false,
         })
         document.addEventListener("pjax:success", () => {
-            whenDOMReady();
-            loadComment()
+            whenDOMReady()
         })
     </script>
 

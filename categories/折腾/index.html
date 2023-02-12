@@ -30,8 +30,6 @@
         }
     </style>
 
-<link href="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.css" rel="stylesheet">
-<script type="text/javascript" src="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.js"></script>
 
     <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rootlex Blog" type="application/atom+xml">
 </head>
@@ -126,7 +124,7 @@
           运行
         </span>
         <span class="statistics_num">
-         353 天
+         354 天
         </span>
     </div>
 </div>
@@ -250,7 +248,7 @@
     </div>
 </div>
 
-            <a class="main_content" href="posts/7a70876f/" xmlns="http://www.w3.org/1999/html">
+            <a class="main_content" href="/posts/7a70876f/" xmlns="http://www.w3.org/1999/html">
     <div class="main_content_up">
         <div class="left">
             <div class="title">新的界面，新的开始</div>
@@ -272,7 +270,7 @@
             </div>
             <div class="item post_date_time">
                 <i class="ri-time-line"></i>
-                <span>18 天前</span>
+                <span>19 天前</span>
             </div>
         </div>
         <div class="right">
@@ -301,14 +299,14 @@
             elements: 'a:not([target="_blank"])',
             selectors: [
                 '.index_content',
-                '.atk-layer-wrap'
+                '.atk-layer-wrap',
+                '#Comments'
             ],
             cacheBust: false,
             scrollRestoration: false,
         })
         document.addEventListener("pjax:success", () => {
-            whenDOMReady();
-            loadComment()
+            whenDOMReady()
         })
     </script>
 

@@ -180,6 +180,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: opacity .3s;
 }
 .nav_item{
     display: flex;
