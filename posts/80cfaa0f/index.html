@@ -30,6 +30,8 @@
         }
     </style>
 
+<link href="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.js"></script>
 
     <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rootlex Blog" type="application/atom+xml">
 </head>
@@ -124,7 +126,7 @@
           运行
         </span>
         <span class="statistics_num">
-         354 天
+         355 天
         </span>
     </div>
 </div>
@@ -277,15 +279,13 @@
 <p>当我们输入域名时如<code>https://blog.nalex.top</code>, 客户端就会向Dns发送请求，Dns服务器在收到请求后会查找这个域名所对应的IP地址,该DNS客户机最终会收到一份回答报文，其中包含有该主机名对应的IP地址一旦该浏览器收到来自DNS的IP地址，就可以向该IP地址定位的HTTP服务器发起TCP连接</p>
 </body></html>
     </div>
-    <link href="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.css" rel="stylesheet">
-<script type="text/javascript" src="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.js"></script>
-<div class="comments_top">
+    <div class="comments_top">
     <i class="ri-chat-3-line"></i>
     <div class="comment_title">评论</div>
 </div>
 <div id="Comments"></div>
 <script>
-    window.onload = () => {
+    document.addEventListener("pjax:success", () => {
         new Artalk({
             el:        '#Comments',
             pageKey:   'https://blog.nalex.top/posts/80cfaa0f/',
@@ -293,7 +293,7 @@
             server:    'https://artalk.yj.al/',
             site:      'Rootlex 的博客',
         })
-    }
+    })
 </script>
 
 </div>
@@ -311,7 +311,6 @@
             selectors: [
                 '.index_content',
                 '.atk-layer-wrap',
-                '#Comments'
             ],
             cacheBust: false,
             scrollRestoration: false,

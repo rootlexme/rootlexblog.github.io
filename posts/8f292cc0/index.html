@@ -30,6 +30,8 @@
         }
     </style>
 
+<link href="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.js"></script>
 
     <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Rootlex Blog" type="application/atom+xml">
 </head>
@@ -124,7 +126,7 @@
           运行
         </span>
         <span class="statistics_num">
-         354 天
+         355 天
         </span>
     </div>
 </div>
@@ -318,15 +320,13 @@
 <p>非常感谢！！！！💕</p>
 </body></html>
     </div>
-    <link href="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.css" rel="stylesheet">
-<script type="text/javascript" src="https://cdn1.tianli0.top/npm/artalk@2.4.4/dist/Artalk.js"></script>
-<div class="comments_top">
+    <div class="comments_top">
     <i class="ri-chat-3-line"></i>
     <div class="comment_title">评论</div>
 </div>
 <div id="Comments"></div>
 <script>
-    window.onload = () => {
+    document.addEventListener("pjax:success", () => {
         new Artalk({
             el:        '#Comments',
             pageKey:   'https://blog.nalex.top/posts/8f292cc0/',
@@ -334,7 +334,7 @@
             server:    'https://artalk.yj.al/',
             site:      'Rootlex 的博客',
         })
-    }
+    })
 </script>
 
 </div>
@@ -352,7 +352,6 @@
             selectors: [
                 '.index_content',
                 '.atk-layer-wrap',
-                '#Comments'
             ],
             cacheBust: false,
             scrollRestoration: false,
