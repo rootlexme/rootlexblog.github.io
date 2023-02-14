@@ -126,7 +126,7 @@
           运行
         </span>
         <span class="statistics_num">
-         355 天
+         356 天
         </span>
     </div>
 </div>
@@ -272,7 +272,7 @@
             </div>
             <div class="item post_date_time">
                 <i class="ri-time-line"></i>
-                <span>20 天前</span>
+                <span>21 天前</span>
             </div>
         </div>
         <div class="right">
@@ -301,10 +301,11 @@
             elements: 'a:not([target="_blank"])',
             selectors: [
                 '.index_content',
-                '.atk-layer-wrap',
+                // '.atk-layer-wrap',
             ],
             cacheBust: false,
             scrollRestoration: false,
+            analytics: false,
         })
         document.addEventListener("pjax:success", () => {
             whenDOMReady()

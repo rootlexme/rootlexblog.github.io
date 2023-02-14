@@ -126,7 +126,7 @@
           运行
         </span>
         <span class="statistics_num">
-         355 天
+         356 天
         </span>
     </div>
 </div>
@@ -310,10 +310,11 @@
             elements: 'a:not([target="_blank"])',
             selectors: [
                 '.index_content',
-                '.atk-layer-wrap',
+                // '.atk-layer-wrap',
             ],
             cacheBust: false,
             scrollRestoration: false,
+            analytics: false,
         })
         document.addEventListener("pjax:success", () => {
             whenDOMReady()

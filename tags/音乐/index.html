@@ -126,7 +126,7 @@
           运行
         </span>
         <span class="statistics_num">
-         355 天
+         356 天
         </span>
     </div>
 </div>
@@ -274,7 +274,7 @@ POST /stat
             </div>
             <div class="item post_date_time">
                 <i class="ri-time-line"></i>
-                <span>14 天前</span>
+                <span>15 天前</span>
             </div>
         </div>
         <div class="right">
@@ -365,7 +365,7 @@ curl -f</div>
             </div>
             <div class="item post_date_time">
                 <i class="ri-time-line"></i>
-                <span>20 天前</span>
+                <span>21 天前</span>
             </div>
         </div>
         <div class="right">
@@ -633,10 +633,11 @@ unpkg 是一个前端常用的公共CDN，用来解包npm，但是有时会出�
             elements: 'a:not([target="_blank"])',
             selectors: [
                 '.index_content',
-                '.atk-layer-wrap',
+                // '.atk-layer-wrap',
             ],
             cacheBust: false,
             scrollRestoration: false,
+            analytics: false,
         })
         document.addEventListener("pjax:success", () => {
             whenDOMReady()

@@ -126,7 +126,7 @@
           运行
         </span>
         <span class="statistics_num">
-         355 天
+         356 天
         </span>
     </div>
 </div>
@@ -641,10 +641,11 @@ descr: 寒蝉黎明之时，便是重生之日</code><div class="code-expand-btn
             elements: 'a:not([target="_blank"])',
             selectors: [
                 '.index_content',
-                '.atk-layer-wrap',
+                // '.atk-layer-wrap',
             ],
             cacheBust: false,
             scrollRestoration: false,
+            analytics: false,
         })
         document.addEventListener("pjax:success", () => {
             whenDOMReady()
