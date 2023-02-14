@@ -382,7 +382,7 @@ hexo d</code><div class="code-expand-btn"><i class="ri-arrow-drop-down-line"></i
 </div>
 <div id="Comments"></div>
 <script>
-    document.addEventListener("pjax:success", () => {
+    function Comments(){
         new Artalk({
             el:        '#Comments',
             pageKey:   'https://blog.nalex.top/posts/ec7d7221/',
@@ -390,6 +390,10 @@ hexo d</code><div class="code-expand-btn"><i class="ri-arrow-drop-down-line"></i
             server:    'https://artalk.yj.al/',
             site:      'Rootlex 的博客',
         })
+    }
+    Comments()
+    document.addEventListener("pjax:complete", () => {
+        Comments()
     })
 </script>
 
@@ -413,7 +417,7 @@ hexo d</code><div class="code-expand-btn"><i class="ri-arrow-drop-down-line"></i
             scrollRestoration: false,
             analytics: false,
         })
-        document.addEventListener("pjax:success", () => {
+        document.addEventListener("pjax:complete", () => {
             whenDOMReady()
         })
     </script>

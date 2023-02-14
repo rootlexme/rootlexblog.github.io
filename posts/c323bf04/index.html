@@ -553,7 +553,7 @@ rootlex<span class="token punctuation">.</span><span class="token function">refl
 </div>
 <div id="Comments"></div>
 <script>
-    document.addEventListener("pjax:success", () => {
+    function Comments(){
         new Artalk({
             el:        '#Comments',
             pageKey:   'https://blog.nalex.top/posts/c323bf04/',
@@ -561,6 +561,10 @@ rootlex<span class="token punctuation">.</span><span class="token function">refl
             server:    'https://artalk.yj.al/',
             site:      'Rootlex 的博客',
         })
+    }
+    Comments()
+    document.addEventListener("pjax:complete", () => {
+        Comments()
     })
 </script>
 
@@ -584,7 +588,7 @@ rootlex<span class="token punctuation">.</span><span class="token function">refl
             scrollRestoration: false,
             analytics: false,
         })
-        document.addEventListener("pjax:success", () => {
+        document.addEventListener("pjax:complete", () => {
             whenDOMReady()
         })
     </script>

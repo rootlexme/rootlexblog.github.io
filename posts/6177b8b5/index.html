@@ -702,7 +702,7 @@
 </div>
 <div id="Comments"></div>
 <script>
-    document.addEventListener("pjax:success", () => {
+    function Comments(){
         new Artalk({
             el:        '#Comments',
             pageKey:   'https://blog.nalex.top/posts/6177b8b5/',
@@ -710,6 +710,10 @@
             server:    'https://artalk.yj.al/',
             site:      'Rootlex 的博客',
         })
+    }
+    Comments()
+    document.addEventListener("pjax:complete", () => {
+        Comments()
     })
 </script>
 
@@ -733,7 +737,7 @@
             scrollRestoration: false,
             analytics: false,
         })
-        document.addEventListener("pjax:success", () => {
+        document.addEventListener("pjax:complete", () => {
             whenDOMReady()
         })
     </script>

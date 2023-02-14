@@ -616,7 +616,7 @@ descr: 寒蝉黎明之时，便是重生之日</code><div class="code-expand-btn
 </div>
 <div id="Comments"></div>
 <script>
-    document.addEventListener("pjax:success", () => {
+    function Comments(){
         new Artalk({
             el:        '#Comments',
             pageKey:   'https://blog.nalex.top/friends/',
@@ -624,6 +624,10 @@ descr: 寒蝉黎明之时，便是重生之日</code><div class="code-expand-btn
             server:    'https://artalk.yj.al/',
             site:      'Rootlex 的博客',
         })
+    }
+    Comments()
+    document.addEventListener("pjax:complete", () => {
+        Comments()
     })
 </script>
 
@@ -647,7 +651,7 @@ descr: 寒蝉黎明之时，便是重生之日</code><div class="code-expand-btn
             scrollRestoration: false,
             analytics: false,
         })
-        document.addEventListener("pjax:success", () => {
+        document.addEventListener("pjax:complete", () => {
             whenDOMReady()
         })
     </script>
