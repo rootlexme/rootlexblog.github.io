@@ -95,41 +95,48 @@
             </li>
         
     </ul>
+<!--    <hr>-->
     <hr>
-    <div class="statistics_warp">
-    <div class="statistics_item">
-        <span class="statistics_span">
-          文章
-        </span>
-        <span class="statistics_num">
-          8 篇
-        </span>
+
+    <div class="tab_warp">
+        <div class="tab_content">
+            <div class="tab_content-tj">
+                <div class="statistics_item">
+              <span class="statistics_span">
+                文章
+              </span>
+                    <span class="statistics_num">
+                8 篇
+              </span>
+                </div>
+                <div class="statistics_item">
+              <span class="statistics_span">
+                分类
+              </span>
+                    <span class="statistics_num">
+                3
+              </span>
+                </div>
+                <div class="statistics_item">
+              <span class="statistics_span">
+                字数
+              </span>
+                    <span class="statistics_num">
+                7.9k
+              </span>
+                </div>
+                <div class="statistics_item">
+              <span class="statistics_span">
+                运行
+              </span>
+                    <span class="statistics_num">
+                358 天
+              </span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          分类
-        </span>
-        <span class="statistics_num">
-          3
-        </span>
-    </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          字数
-        </span>
-        <span class="statistics_num">
-          7.9k
-        </span>
-    </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          运行
-        </span>
-        <span class="statistics_num">
-         356 天
-        </span>
-    </div>
-</div>
+
 
     <div class="connect">
         
@@ -224,9 +231,9 @@
                 
                     <a class="cate_item" href="/categories/教程/">教程</a>
                 
-                    <a class="cate_item" href="/categories/笔记/">笔记</a>
-                
                     <a class="cate_item" href="/categories/折腾/">折腾</a>
+                
+                    <a class="cate_item" href="/categories/笔记/">笔记</a>
                 
             </div>
         </div>
@@ -234,7 +241,6 @@
             <span>寒蝉黎明之时，便是重生之日</span>
         </div>
     </div>
-    <hr>
 </div>
 
 
@@ -282,6 +288,8 @@
             selectors: [
                 '.index_content',
                 // '.atk-layer-wrap',
+                '.tab_warp',
+                '.js-pjax'
             ],
             cacheBust: false,
             scrollRestoration: false,
@@ -291,6 +299,11 @@
             whenDOMReady()
         })
     </script>
+    <div class="js-pjax">
+        <script>
+            
+        </script>
+    </div>
 
 
     </body>

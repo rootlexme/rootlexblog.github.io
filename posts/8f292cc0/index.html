@@ -95,41 +95,57 @@
             </li>
         
     </ul>
+<!--    <hr>-->
     <hr>
-    <div class="statistics_warp">
-    <div class="statistics_item">
-        <span class="statistics_span">
-          文章
-        </span>
-        <span class="statistics_num">
-          8 篇
-        </span>
+
+    <div class="tab_warp">
+      <input type="radio" name="side-tab" class="tab-radio-tj" id="card-selector-tj" checked>
+      <input type="radio" name="side-tab" class="tab-radio-toc" id="card-selector-toc">
+      <div class="tab_selector">
+        <label for="card-selector-tj" class="tab-handler-tj">统计</label>
+        <label for="card-selector-toc" class="tab-handler-toc">目录</label>
+      </div>
+      <div class="tab_content">
+        <div class="tab_content-tj">
+            <div class="statistics_item">
+              <span class="statistics_span">
+                文章
+              </span>
+              <span class="statistics_num">
+                8 篇
+              </span>
+            </div>
+            <div class="statistics_item">
+              <span class="statistics_span">
+                分类
+              </span>
+              <span class="statistics_num">
+                3
+              </span>
+            </div>
+            <div class="statistics_item">
+              <span class="statistics_span">
+                字数
+              </span>
+              <span class="statistics_num">
+                7.9k
+              </span>
+            </div>
+            <div class="statistics_item">
+              <span class="statistics_span">
+                运行
+              </span>
+              <span class="statistics_num">
+                358 天
+              </span>
+            </div>
+          </div>
+        <div class="tab_content-toc">
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87"><span class="toc-text">准备</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A3%E6%96%87%E7%B4%A2%E5%BC%95"><span class="toc-text">正文索引</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-text">正文</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8EGitHub%E5%85%8B%E9%9A%86%E4%BB%A3%E7%A0%81"><span class="toc-text">从GitHub克隆代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8CUnpkg"><span class="toc-text">运行Unpkg</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%9A%E4%B8%BB%E7%9A%84unpkg%E9%95%9C%E5%83%8F"><span class="toc-text">博主的unpkg镜像</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%90%8E%E9%9D%A2"><span class="toc-text">写在后面</span></a></li></ol>
+        </div>
+      </div>
     </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          分类
-        </span>
-        <span class="statistics_num">
-          3
-        </span>
-    </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          字数
-        </span>
-        <span class="statistics_num">
-          7.9k
-        </span>
-    </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          运行
-        </span>
-        <span class="statistics_num">
-         356 天
-        </span>
-    </div>
-</div>
+
 
     <div class="connect">
         
@@ -224,9 +240,9 @@
                 
                     <a class="cate_item" href="/categories/教程/">教程</a>
                 
-                    <a class="cate_item" href="/categories/笔记/">笔记</a>
-                
                     <a class="cate_item" href="/categories/折腾/">折腾</a>
+                
+                    <a class="cate_item" href="/categories/笔记/">笔记</a>
                 
             </div>
         </div>
@@ -234,7 +250,6 @@
             <span>寒蝉黎明之时，便是重生之日</span>
         </div>
     </div>
-    <hr>
 </div>
 
 
@@ -356,6 +371,8 @@
             selectors: [
                 '.index_content',
                 // '.atk-layer-wrap',
+                '.tab_warp',
+                '.js-pjax'
             ],
             cacheBust: false,
             scrollRestoration: false,
@@ -365,6 +382,13 @@
             whenDOMReady()
         })
     </script>
+    <div class="js-pjax">
+        <script>
+            
+                toc.init()
+            
+        </script>
+    </div>
 
 
     </body>

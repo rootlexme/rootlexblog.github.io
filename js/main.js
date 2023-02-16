@@ -50,13 +50,39 @@ class extendCode{
             if (!parent.classList.contains('done')){
                 parent.classList.add('done')
                 target.childNodes[0].classList = 'ri-arrow-drop-up-line'
-                parent.setAttribute('style', 'max-height: ' + height + 'px;padding-bottom: 2.1em')
+                parent.setAttribute('style', 'max-height: ' + height + 'px;padding-bottom: 2.1em;')
             }else {
                 parent.classList.remove('done')
                 target.childNodes[0].classList = 'ri-arrow-drop-down-line'
                 parent.setAttribute('style', 'max-height: var(--code-limit);')
             }
         })
+    }
+}
+class toc {
+    static init() {
+        const el = document.querySelectorAll('.toc a')
+        el.forEach((e) => {
+            e.addEventListener('click', (event) => {
+                event.preventDefault()
+                // this.scrollTo()
+                this.getAnchor(event.target.innerText)
+            })
+        })
+    }
+    static scrollToAnchor(x, y){
+        console.log(x, y)
+        scrollTo({
+            top: y,
+            left: x,
+            behavior: 'smooth'
+        })
+    }
+    static getAnchor(id){
+        const el = document.getElementById(id)
+        console.log(el)
+        this.scrollToAnchor(el.getBoundingClientRect().left, el.getBoundingClientRect().top + (window.scrollY ? window.scrollY : 0) - 72)
+        console.log(el.getBoundingClientRect().top)
     }
 }
 function whenDOMReady() {

@@ -95,41 +95,48 @@
             </li>
         
     </ul>
+<!--    <hr>-->
     <hr>
-    <div class="statistics_warp">
-    <div class="statistics_item">
-        <span class="statistics_span">
-          文章
-        </span>
-        <span class="statistics_num">
-          8 篇
-        </span>
+
+    <div class="tab_warp">
+        <div class="tab_content">
+            <div class="tab_content-tj">
+                <div class="statistics_item">
+              <span class="statistics_span">
+                文章
+              </span>
+                    <span class="statistics_num">
+                8 篇
+              </span>
+                </div>
+                <div class="statistics_item">
+              <span class="statistics_span">
+                分类
+              </span>
+                    <span class="statistics_num">
+                3
+              </span>
+                </div>
+                <div class="statistics_item">
+              <span class="statistics_span">
+                字数
+              </span>
+                    <span class="statistics_num">
+                7.9k
+              </span>
+                </div>
+                <div class="statistics_item">
+              <span class="statistics_span">
+                运行
+              </span>
+                    <span class="statistics_num">
+                358 天
+              </span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          分类
-        </span>
-        <span class="statistics_num">
-          3
-        </span>
-    </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          字数
-        </span>
-        <span class="statistics_num">
-          7.9k
-        </span>
-    </div>
-    <div class="statistics_item">
-        <span class="statistics_span">
-          运行
-        </span>
-        <span class="statistics_num">
-         356 天
-        </span>
-    </div>
-</div>
+
 
     <div class="connect">
         
@@ -224,9 +231,9 @@
                 
                     <a class="cate_item" href="/categories/教程/">教程</a>
                 
-                    <a class="cate_item" href="/categories/笔记/">笔记</a>
-                
                     <a class="cate_item" href="/categories/折腾/">折腾</a>
+                
+                    <a class="cate_item" href="/categories/笔记/">笔记</a>
                 
             </div>
         </div>
@@ -234,7 +241,6 @@
             <span>寒蝉黎明之时，便是重生之日</span>
         </div>
     </div>
-    <hr>
 </div>
 
 
@@ -274,7 +280,7 @@ POST /stat
             </div>
             <div class="item post_date_time">
                 <i class="ri-time-line"></i>
-                <span>15 天前</span>
+                <span>17 天前</span>
             </div>
         </div>
         <div class="right">
@@ -319,7 +325,7 @@ curl -f</div>
             </div>
             <div class="item post_date_time">
                 <i class="ri-time-line"></i>
-                <span>16 天前</span>
+                <span>18 天前</span>
             </div>
         </div>
         <div class="right">
@@ -539,6 +545,8 @@ unpkg 是一个前端常用的公共CDN，用来解包npm，但是有时会出�
             selectors: [
                 '.index_content',
                 // '.atk-layer-wrap',
+                '.tab_warp',
+                '.js-pjax'
             ],
             cacheBust: false,
             scrollRestoration: false,
@@ -548,6 +556,11 @@ unpkg 是一个前端常用的公共CDN，用来解包npm，但是有时会出�
             whenDOMReady()
         })
     </script>
+    <div class="js-pjax">
+        <script>
+            
+        </script>
+    </div>
 
 
     </body>
